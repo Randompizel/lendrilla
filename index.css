@@ -1,0 +1,49 @@
+body {
+  background: #100F14;
+  display: flex;
+  justify-content: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+main {
+
+}
+
+.spinner {
+    width: 35px;
+    border: 4px solid transparent;
+    height: 35px;
+    margin: 0 9px 0 0;
+    border-radius: 50%;
+    border-top: 4px solid #FFE644;
+    animation: spin 1500ms linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform:rotate(0deg);
+    }
+    to {
+      transform:rotate(360deg);
+    }
+}
+
+.spinner-wrap {
+    margin: 300px 0 0 0;
+    display: flex;
+}
+
+.spinner-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 35px 0 0;
+ font-size: 18px;
+ font-weight: 600;
+ letter-spacing: 3px;
+ color: #fff;
+ font-family: monospace;
+}
